@@ -36,7 +36,7 @@ def parse_one_page(html):
 
 # 写入文件
 def write_to_file(content):
-    with open('made in China.xlsx', 'a', newline='', encoding='gbk') as csvfile:
+    with open('made in China.csv', 'a', newline='', encoding='gbk') as csvfile:
         fieldnames = ['公司', '所在地', '联系电话', '联系人']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerow(content)
